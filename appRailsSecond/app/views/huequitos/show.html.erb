@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Localidad:</strong>
+  <%= @huequito.localidad %>
+</p>
+
+<p>
+  <strong>Direccion:</strong>
+  <%= @huequito.direccion %>
+</p>
+
+<p>
+  <strong>Tamanio:</strong>
+  <%= @huequito.tamanio %>
+</p>
+
+<p>
+  <strong>Ranking:</strong>
+  <%= @huequito.ranking %>
+</p>
+
+<%= link_to 'Edit', edit_huequito_path(@huequito) %> |
+<%= link_to 'Back', huequitos_path %>

@@ -1,0 +1,2 @@
+class Huequito < ApplicationRecord
+end
