@@ -8,8 +8,6 @@ import { UserServiceProvider } from '../../providers/user-service/user-service';
 })
 export class HomePage {
 
-  users: any[] = [];
-
   constructor(public navCtrl: NavController, public userService: UserServiceProvider) {
 
   }
@@ -18,7 +16,7 @@ export class HomePage {
     this.userService.getUsers()
     .subscribe(
       (data) => { // Success
-        this.users = data['results'];
+        this.users = data;
       },
       (error) =>{
         console.error(error);
